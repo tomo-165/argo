@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アルゴ計画・リアルタイムデータサイト</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel=" stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- ヘッダー -->
+        <header id="header">
+            <div class="header-wrap">
+                <div class="more1">
+                    <p class="more1 yajirusi1"><a href="./index.html">English</a></p>
+                </div>
+                <div class="title-wrap">
+                    <img src="./image/jma_logo.jpg" class="logo" alt="気象庁のロゴ">
+                    <h1 class="main-title">
+                    アルゴ計画・リアルタイムデータサイト
+                    </h1>
+                </div>
+            </div>
+        </header>
+
+    <div class="main-content">
+    <!-- データサイトの説明部分 -->
+        <section id="intro">
+            <p>日本のアルゴ計画におけるデータ提供は、アルゴフロートのデータを即時的に公開する目的で、気象庁が運用するリアルタイムデータサイトと、高度な品質管理を施したデータを公開する目的で海洋研究開発機構が運用する高品質データベースによって行われます。アルゴ計画・リアルタイムデータサイトは、アルゴリアルタイムデータ（日本のアルゴリアルタイムデータ及びGTSで流通する世界のアルゴリアルタイムデータ）の提供を行うものです。</p>
+
+            <div class="more2">
+                <p class="more2 yajirusi2"><a href="https://www.jamstec.go.jp/J-ARGO/about/">アルゴ計画についてはこちら</a></p>
+            </div>
+        </section>
+
+    <!-- アルゴフロートの分布状況 -->
+        <section class="map-section">
+            <h2 class="section_title">
+                アルゴフロートの分布状況
+            </h2>
+            <img src="./image/mapGLBj.png" alt="GLOBAL MAP" usemap="#glbmap" class="global-map">
+            <!-- <img src="./mapgif/mapGLBj.gif" alt="GLOBAL MAP" usemap="#glbmap" class="global-map"> -->
+            <map name="glbmap">
+                <area shape="rect" coords="251,92,442,177" href="./english/maphtm/mapJP.html" alt="zoom in Western North Pacific">
+                <area shape="rect" coords="38,28,293,70" href="./english/maphtm/mapIN.html" alt="zoom in 0-80N, 0-180E">
+                <area shape="rect" coords="38,28,123,156" href="./english/maphtm/mapIN.html" alt="zoom in 0-80N, 0-180E">
+                <area shape="rect" coords="38,198,123,368" href="./english/maphtm/mapIS.html" alt="zoom in 0-80S, 0-180E">
+                <area shape="rect" coords="38,241,293,368" href="./english/maphtm/mapIS.html" alt="zoom in 0-80S, 0-180E">
+                <area shape="rect" coords="38,113,293,241" href="./english/maphtm/mapIT.html" alt="zoom in Indian Ocean">
+                <area shape="rect" coords="293,28,592,156" href="./english/maphtm/mapPN.html" alt="zoom in North Pacific">
+                <area shape="rect" coords="293,156,634,241" href="./english/maphtm/mapPT.html" alt="zoom in Tropical Pacific">
+                <area shape="rect" coords="293,241,677,368" href="./english/maphtm/mapPS.html" alt="zoom in South Pacific">
+                <area shape="rect" coords="592,28,804,156" href="./english/maphtm/mapAN.html" alt="zoom in North Atlantic">
+                <area shape="rect" coords="634,156,804,241" href="./english/maphtm/mapAT.html" alt="zoom in Tropical Atlantic">
+                <area shape="rect" coords="677,241,804,368" href="./english/maphtm/mapAS.html" alt="zoom in South Atlantic">
+            </map>
+            <div class="sentence_group">
+                <p>赤丸が日本のフロート</p>
+                <p>※拡大したい海域を図上でクリックしてご覧ください</p>
+            </div>
+            
+        </section>
+
+    <!-- アルゴフロートの活動状況 -->
+        <section class="active-section">
+            <h2 class="section_title">
+                アルゴフロートの活動状況
+            </h2>
+            <div>
+                <ul class="active_list">
+                    <li><a href="https://www.data.jma.go.jp/argo/data/deployment/new_argoJ.html">新規投入フロートの情報</a></li>
+                    <li><a href="https://www.data.jma.go.jp/argo/data/status/statusJ.html">日本のアルゴフロートの活動状況</a></li>
+                    <li>機関別アルゴフロートの活動状況</li>
+                </ul>
+                <p><a href="https://www.data.jma.go.jp/argo/data/status/statusOIST.html">沖縄科学技術研究基盤整備機構</a> / <a href="https://www.data.jma.go.jp/argo/data/status/statusJAMSTEC.html">海洋研究開発機構</a> / <a href="https://www.data.jma.go.jp/argo/data/status/statusMRI.html">気象研究所</a> / <a href="https://www.data.jma.go.jp/argo/data/status/statusJMA.html">気象庁</a> / <a href="https://www.data.jma.go.jp/argo/data/status/statusNPRI.html">国立極地研究所</a> / <a href="https://www.data.jma.go.jp/argo/data/status/statusNRIFS.html">中央水産研究所</a> / <a href="https://www.data.jma.go.jp/argo/data/status/statusORI.html">東京大学大気海洋研究所</a> / <a href="https://www.data.jma.go.jp/argo/data/status/statusTNFRI.html">東北区水産研究所</a> / <a href="https://www.data.jma.go.jp/argo/data/status/statusTOHOKU_UNIV.html">東北大学</a> / <a href="https://www.data.jma.go.jp/argo/data/status/statusHU.html">北海道大学</a> / <a href="https://www.data.jma.go.jp/argo/data/status/statusHNFRI.html">北海道区水産研究所</a><br>(かな順)
+                </p>
+            </div>
+        </section>
+
+    <!-- アルゴフロートのデータについて -->
+        <section class="data-section">
+            <h2 class="section_title">
+                アルゴフロートのデータについて
+            </h2>
+            <div class="data-section">
+                <p>高度な品質管等を経た全世界のアルゴデータのその時点での最新版は、全球データセンターである<a href="https://data-argo.ifremer.fr/dac/">フランス海洋開発研究所（IFREMER）</a>及び<a href="https://usgodae.org/ftp/outgoing/argo/dac/">米国海軍気象海洋センター（FNMOC）</a>から提供されます。</p>
+                <p>全球データセンターのほかにも、気象庁が運用するフロートデータをまとめたページの他、OceanOPS、EuroArgoからもアルゴフロートのデータを確認することができます。</p>
+            </div>
+            
+            <div>
+                <h3 class="subtitle">
+                    データ参照リンク
+                </h3>
+                <div>
+                    <ul class="link_list">
+                        <li><a href="https://data-argo.ifremer.fr/dac/">フランス海洋開発研究所（IFREMER）</a></li>
+                        <li><a href="https://usgodae.org/ftp/outgoing/argo/dac/">米国海軍気象海洋センター（FNMOC）</a></li>
+                        <li><a href="https://www.data.jma.go.jp/argo/data/bfrdata/replistj.html">GTSで流通するフロートデータ（水温・塩分鉛直分布図、BUFR形式）</a></li>
+                        <li><a href="https://www.ocean-ops.org/board/?t=argo">Ocean OPS</a></li>
+                        <li><a href="https://dataselection.euro-argo.eu/">EuroArgo</a></li>
+                        <li><a href="https://www.argodatamgt.org/DataAccess.html">Argo Data Management（data）</a></li>
+                    </ul>
+                </div>
+            </div>
+
+                <h3 class="subtitle">
+                    データの活用例
+                </h3>
+                <p>
+                アルゴフロートのデータをはじめとする海洋の観測データを観測後ただちに取り込んで解析する海洋データ同化システムにより、海洋の状況の監視が行われています。海洋データ同化システムの出力は気象モデルの海面境界値として、気象庁の季節予報にも利用されており、アルゴフロートのデータを利用することでエルニーニョ予測や季節予報の精度が改善しています。<br>また、アルゴフロートのデータは、システム開発・改善のための入力データ・検証用データとしても利用されており、高度なデータ同化手法による長期的な気候・海洋の予測や、それらのシステムに生態系モデルを組み込み、漁業予測等への活用も試みられるなど、研究開発と連動しながらニーズの多様化に対応しています。
+                </p>
+
+            <div>
+                <img class="kuroshio" src="./image/cur050D_KR20251010.png" alt="黒潮の様子">
+                <p class="kuroshio_title">海洋データ同化システムが抽出した2025年10月10日の黒潮の様子</p>
+                
+                <h4>
+                    フロートデータを利用した主な解析プロダクト
+                </h4>
+                <ul class="link_list">
+                    <li><a href="https://www.data.jma.go.jp/kaiyou/shindan/index.html">海洋の健康診断表（気象庁HP）</a></li>
+                    <li><a href="https://www.data.jma.go.jp/cpd/elnino/index.html">エルニーニョ監視速報（気象庁HP）</a></li>
+                </ul>
+            </div>
+        </section>
+
+    <!-- アルゴフロートを展開したいときは -->
+        <section class="new-section">
+            <h2 class="section_title">
+                アルゴフロートを展開したいときは
+            </h2>
+            <p>新規PI向けに記載</p>
+
+        </section>
+
+    <!-- アルゴ計画に関する記事 -->
+        <section class="news-section">
+            <h2 class="section_title">
+                アルゴ計画に関する記事
+            </h2>
+            <ul class="link_list">
+                <li><a href="https://www.data.jma.go.jp/argo/data/japanese/bunken/yoshida2002/main.html">「アルゴデータシステム」（「測候時報」第69巻特別号2002年より）[HTML形式]</a></li>
+                <li><a href="https://www.data.jma.go.jp/argo/data/japanese/bunken/yoshida2001b.html">「第3回アルゴ科学チーム会合報告」（「海の研究」第10巻 第4号 2001年7月より）[HTML形式]</a></li>
+                <li><a href="https://www.data.jma.go.jp/argo/data/japanese/bunken/saiki2001/main.htm">「Argo（アルゴ）計画」（「測候時報」第68巻特別号2001年より）[HTML形式]</a></li>
+                <li><a href="https://www.data.jma.go.jp/argo/data/japanese/bunken/yoshida2001/yoshida.html">「Argo（アルゴ）計画」（「測候時報」第68巻特別号2001年より）[HTML形式]</a></li>
+                <li><a href="https://www.data.jma.go.jp/argo/data/japanese/bunken/saiki2000/saiki.html">「Argo（アルゴ）計画」（「気象」2000年7月号より）[HTML形式]</a></li>
+            </ul>
+            <p>※文献の引用に際しては出所を明記してください</p>
+        </section>
+
+    <!-- アルゴフロート関連リンク -->
+        <section class="link-section">
+            <h2 class="section_title">
+                アルゴフロート関連リンク
+            </h2>
+            <ul class="link_list">
+                <li><a href="https://www.jamstec.go.jp/J-ARGO/">ジャパン・アルゴ・ホームページ（アルゴ計画推進員会監修）</a></li>
+                <li><a href="https://warp.ndl.go.jp/web/20170503045551/www.kantei.go.jp/jp/mille/argo/index.html">首相官邸：ミレニアムプロジェクトについて（国立国会図書館WARP）</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- フッター -->
+        <footer id="footer">
+            <div class="footer_wrap">
+                <p>このページに対するご意見・お問い合わせ先</p>
+                <p>argoadmin@climar.kishou.go.jp</p>
+            </div>
+        </footer>
+</body>
+
+</html>

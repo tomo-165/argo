@@ -1,0 +1,239 @@
+@charset "utf-8";
+
+
+/* ページ全体の幅の調整 */
+.header-wrap{
+    max-width: 1440px; /* ページの最大幅 */
+    padding: 0 10%;   /* 左右の余白 */
+}
+/*  */
+.main-content{
+    max-width: 1200px; /* ページの最大幅 */
+    margin: 0 auto;    /* 中央寄せ */
+    padding: 0 15%;
+}
+
+/* ヘッダー */
+.more1{
+    text-align: right;
+    font-size: 14px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.yajirusi1 {
+    display: inline-block;
+    text-align: center;
+}
+
+.yajirusi1::after {
+    display: block;
+    content: '';
+    width: 100px;
+    height: 4px;
+    border-right: 1px solid #5F5F5F;
+    border-bottom: 1px solid #5F5F5F;
+    transform: skew(45deg);
+    padding-right: 20px;
+}
+
+.main-title{
+    font-size: 30px;    
+    margin: 0 auto;
+    color: 000824;
+}
+
+.title-wrap {
+    display: flex;
+    align-items: flex-end; /* 下端をそろえる */
+    width: 100%;
+    margin-bottom: 20px;   /* 次の要素との距離 */
+    border-bottom: 3px solid #055AAC; /* タイトルの下線 */
+    padding-bottom: 12px;    /* 画像・文字と線の間 */
+}
+
+.logo{
+    display: block;
+    height: 40px; /* 必要に応じて調整 */
+    padding-left: 50px;
+}
+
+
+
+/* イントロ */
+.yajirusi2 {
+    display: inline-block;
+    text-align: center;
+}
+
+.more2 {
+    text-align: right;
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+.yajirusi2::after {
+    display: block;
+    content: '';
+    width: 220px;
+    height: 4px;
+    border-right: 1px solid #5F5F5F;
+    border-bottom: 1px solid #5F5F5F;
+    transform: skew(45deg);
+    padding-right: 20px;
+}
+
+/* アルゴフロートの分布状況 */
+.map-section .img{
+    display: block;
+    margin: 0 auto;
+}
+
+.sentence_group{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+
+/* アルゴフロートの活動状況 */
+.active_list li::before {
+    content: "";
+    display: inline-block;
+    width: 12px;            /* 丸の大きさ */
+    height: 12px;
+    border: 2px solid #1060AC; /* 線の太さと色 */
+    border-radius: 50%;     /* 完全な円にする */
+    margin-right: 8px;      /* 見出しとの間隔 */
+    vertical-align: middle; /* 文字と高さを揃える */
+}
+
+.active_list li{
+    margin-bottom: 20px;
+}
+
+.active_list{
+    margin-left: 10px;
+}
+
+.active-section p{
+    margin-left: 30px;
+}
+
+
+/* アルゴフロートのデータについて */
+.subtitle::before {
+    content: "";
+    display: inline-block;
+    width: 12px;            /* 丸の大きさ */
+    height: 12px;
+    border: 2px solid #1060AC; /* 線の太さと色 */
+    border-radius: 50%;     /* 完全な円にする */
+    margin-right: 8px;      /* 見出しとの間隔 */
+    vertical-align: middle; /* 文字と高さを揃える */
+}
+
+.img.kuroshio {
+    display: block;
+    margin: 0 auto;
+}
+
+.kuroshio_title{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.subtitle{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 8px;
+}
+
+.data-section p{
+    margin-left: 15px;
+}
+
+/* タイトルの文字の下線 */
+h4 {
+    display: inline-block;
+    border-bottom: 2px solid #1060AC; /* 線の太さ・色 */
+    padding-bottom: 4px;           /* 文字と線の間の余白 */
+}
+
+
+/* アルゴフロートを展開したいときは */
+/* まだ記載なし */
+
+
+/* アルゴ計画に関する記事 */
+.news-section p{
+    margin-left: 15px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+/* フッター */
+#footer {
+    background-color: #D7EBFE; /* 水色の背景 */
+    width: 100%;
+    padding: 50px 0;           /* 上下の余白 */
+    margin-top: 60px;
+}
+
+.footer_wrap {
+    max-width: 1440px;
+    margin: 0 auto;            /* ← 中央寄せ */
+    padding: 0 10%;            /* ← 必要なら左右余白 */
+}
+
+.footer_wrap p {
+    text-align: center;
+    font-size: 16px;
+}
+
+/* 共通のもの */
+
+/* セクションごとのタイトル */
+.section_title {
+    background-color: #D7EBFE; /* メインの帯の色 */
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 20px;
+    margin: 20px 0;
+    position: relative; /* ← 擬似要素を配置するために必要 */
+    margin-top: 50px;
+}
+
+.section_title::before {
+    content: "";
+    position: absolute;
+    left: 0;               /* 左端に固定 */
+    top: 0;
+    width: 10px;            /* アクセントバーの幅 */
+    height: 100%;          /* 親の高さに合わせる（＝帯と同じ高さ） */
+    background-color: #055AAC; /* アクセントの色（好きに変更） */
+    border-radius: 4px 0 0 4px; /* 左側だけ角丸にする（不要なら削除） */
+}
+
+
+
+/* リンクの前に小さいポツをつける */
+/* ------------------------------------ */
+/* アルゴ計画に関する記事 */
+/* アルゴフロート関連リンク */
+/* フロートデータを利用した主な解析プロダクト */
+/* データ参照リンク */
+.link_list li::before {
+    content: "•";
+    margin-right: 8px;
+    margin-left: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+    line-height: 2;
+}
+/* ------------------------------------ */
+
+
