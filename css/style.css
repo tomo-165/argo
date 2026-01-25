@@ -2,24 +2,29 @@
 
 
 /* ページ全体の幅の調整 */
-.header-wrap{
-    max-width: 1440px; /* ページの最大幅 */
-    padding: 0 10%;   /* 左右の余白 */
+.header-wrap {
+    max-width: 1000px;
+    padding: 0;
+    margin: 0 auto;
+    /* position: relative; */
 }
-/*  */
+
 .main-content{
-    max-width: 1200px; /* ページの最大幅 */
+    max-width: 1000px; /* ページの最大幅 */
     margin: 0 auto;    /* 中央寄せ */
     padding: 0 15%;
 }
 
 /* ヘッダー */
-.more1{
+/* ～Englishの部分～ */
+.more1 {
+    /* width: 100%; */
     text-align: right;
     font-size: 14px;
     margin-top: 40px;
     margin-bottom: 20px;
 }
+
 
 .yajirusi1 {
     display: inline-block;
@@ -37,28 +42,75 @@
     padding-right: 20px;
 }
 
+/* ロゴ＋タイトルを横並び */
+.title-wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; /* ← 横方向の中央揃え */
+    align-items: center;
+    padding: 20px 0;
+}
+
+/* タイトルの調整箇所 */
 .main-title{
     font-size: 30px;    
     margin: 0 auto;
     color: 000824;
 }
 
-.title-wrap {
-    display: flex;
-    align-items: flex-end; /* 下端をそろえる */
-    width: 100%;
-    margin-bottom: 20px;   /* 次の要素との距離 */
-    border-bottom: 3px solid #055AAC; /* タイトルの下線 */
-    padding-bottom: 12px;    /* 画像・文字と線の間 */
-}
-
 .logo{
     display: block;
-    height: 40px; /* 必要に応じて調整 */
+    height: 50px;
     padding-left: 50px;
+    margin-right: 20px;
 }
 
+/* ナビゲーション全体 */
+.nav {
+    width: 100%;
+}
 
+/* メニューの中身（1200pxに収める） */
+.nav ul {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+
+/* 各メニュー項目（4つを均等に並べる） */
+.nav li {
+    flex: 1; /* ← 4つを均等幅にする */
+    text-align: center;
+    background-color: #EEF7FF; /* メニューの背景色（長方形の色） */
+    padding: 10px 0;
+    border: 1px solid #C6E3FE;
+    margin-bottom: 50px;
+    transition: background-color 0.3s ease;
+}
+
+/* メニューをホバーした時の色の変化 */
+.nav li:hover {
+    background-color: #083D6E; /* 好きな色に変更 */
+    color: white;
+}
+
+/* メニューの文字 */
+.nav a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.nav li.color {
+    background-color: #083D6E; /* ホバーと同じ色 */
+}
+
+.nav li.color a {
+    color: white;
+}
 
 /* イントロ */
 .yajirusi2 {
@@ -89,10 +141,27 @@
     margin: 0 auto;
 }
 
-.sentence_group{
+.map_sentence{
     text-align: center;
     font-size: 15px;
     margin-top: 20px;
+}
+
+.map{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.explain{
+    margin-top: 50px;
+}
+
+.bold-link{
+    font-weight: bold;
+}
+
+.underline {
+    text-decoration: underline;
 }
 
 
@@ -109,14 +178,16 @@
 }
 
 .active_list li{
-    margin-bottom: 20px;
+    margin-top:40px;
+    margin-bottom:15px;
 }
 
 .active_list{
     margin-left: 10px;
+    margin-top: 40px;
 }
 
-.active-section p{
+#ACTIVE p{
     margin-left: 30px;
 }
 
@@ -146,13 +217,14 @@
 }
 
 .subtitle{
-    margin-top: 15px;
+    margin-top: 40px;
     margin-bottom: 10px;
     margin-left: 8px;
 }
 
-.data-section p{
+#DATA p{
     margin-left: 15px;
+    margin-bottom: 10px;
 }
 
 /* タイトルの文字の下線 */
@@ -203,7 +275,7 @@ h4 {
     font-size: 20px;
     margin: 20px 0;
     position: relative; /* ← 擬似要素を配置するために必要 */
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .section_title::before {
@@ -235,5 +307,10 @@ h4 {
     line-height: 2;
 }
 /* ------------------------------------ */
+
+
+.link-color {
+    color: #273652;        /* 好きな色に変更できる */
+}
 
 

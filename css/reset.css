@@ -38,9 +38,3 @@ ul {
     /*左の「・」を消す*/
     list-style: none;
 }
-
-img {
-    max-width: 100%;
-    vertical-align: bottom;
-    border: none;
-}
