@@ -1,7 +1,8 @@
 @charset "utf-8";
 
+/* 共通のcssは下部に記載 */
 
-/* ページ全体の幅の調整 */
+/* ヘッダーの幅の調整 */
 .header-wrap {
     max-width: 1000px;
     padding: 0;
@@ -22,9 +23,8 @@
     text-align: right;
     font-size: 14px;
     margin-top: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
-
 
 .yajirusi1 {
     display: inline-block;
@@ -42,7 +42,7 @@
     padding-right: 20px;
 }
 
-/* ロゴ＋タイトルを横並び */
+/* ロゴとタイトルを横並び */
 .title-wrap {
     max-width: 1000px;
     margin: 0 auto;
@@ -64,6 +64,7 @@
     height: 50px;
 }
 
+/* ★ナビゲーションの調整★ */
 /* ナビゲーション全体 */
 .nav {
     width: 100%;
@@ -85,7 +86,7 @@
     background-color: #EEF7FF; /* メニューの背景色（長方形の色） */
     padding: 10px 0;
     border: 1px solid #C6E3FE;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     transition: background-color 0.3s ease;
 }
 
@@ -110,8 +111,14 @@
     color: white;
 }
 
+/* ホームについて */
+.explain p {
+    text-indent: 1em; /* 1文字分下げる */
+}
+
+
 /* アルゴフロートの分布状況 */
-.map-section.img{
+.mappng{
     display: block;
     margin: 0 auto;
 }
@@ -179,17 +186,42 @@
     vertical-align: middle; /* 文字と高さを揃える */
 }
 
-.kuroshio {
-    display: block;
-    margin: 0 auto;
+.data-section p {
+    text-indent: 1em; /* 1文字分下げる */
 }
 
-.kuroshio_title{
-    text-align: center;
-    font-size: 15px;
+/* .sst-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
     margin-top: 20px;
-    margin-bottom: 30px;
+} */
+
+.sst-row {
+    display: flex;
+    align-items: center; /* 中央揃え */
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 20px
 }
+
+
+.sst-item {
+    text-align: center; /* キャプションを中央揃え */
+    width: auto;   /* ここを揃えたいサイズに */
+    height: auto;  /* 必要なら高さも指定 */
+    object-fit: cover; /*トリミングしつつ枠にフィット */
+}
+
+.example_sst {
+    width: 100%; /* 必要に応じて調整 */
+    max-width: 300px; /* 画像サイズを揃える場合 */
+}
+
+.sst_title{
+    font-size: 13px;
+} 
 
 .subtitle{
     margin-top: 40px;
@@ -206,7 +238,7 @@
 h4 {
     display: inline-block;
     border-bottom: 2px solid #1060AC; /* 線の太さ・色 */
-    padding-bottom: 4px;           /* 文字と線の間の余白 */
+    /* padding-bottom: 4px; */
 }
 
 
